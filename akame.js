@@ -2166,6 +2166,35 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 })
             }
             break
+	case 'otagall': {
+                if (!m.isGroup) throw mess.group
+                if (!!isCreator) throw mess.admin
+                let teks = `*👥 Tag All By Owner Bot*
+ 
+ 🗞️ *Pesan : ${q ? q : 'kosong'}*\n\n`
+                for (let mem of participants) {
+                    teks += `⭔ @${mem.id.split('@')[0]}\n`
+                }
+                akame.sendMessage(m.chat, {
+                    text: teks,
+                    mentions: participants.map(a => a.id)
+                }, {
+                    quoted: ftroli
+                })
+            }
+            break
+	case 'ohidetag': {
+                if (!m.isGroup) throw mess.group
+                if (!isCreator) throw mess.admin
+                if (!isBotAdmins) throw mess.botAdmin
+                akame.sendMessage(m.chat, {
+                    text: q ? q : '',
+                    mentions: participants.map(a => a.id)
+                }, {
+                    quoted: ftroli
+                })
+            }
+            break
             case 'hidetag': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
