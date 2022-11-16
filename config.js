@@ -86,7 +86,7 @@ global.mess = {
 //terserah mau ubah atau nggak
 global.limitawal = {
     premium: "Infinity",
-    free: 50,
+    free: 25,
 }
 
 //—————「 Set Image 」—————//
