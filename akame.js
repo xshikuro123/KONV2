@@ -493,9 +493,9 @@ const fakestatus = {
     // total hit
         global.hit = {}
         if (isCmd) {
-           data = await fetchJson('https://api.countapi.xyz/hit/AkameV2.0/visits')
+           data = await fetchJson('https://api.countapi.xyz/hit/niskata.0/visits')
            jumlahcmd = `${data.value}`
-           dataa = await fetchJson(`https://api.countapi.xyz/hit/AkameV2.0${moment.tz('Asia/Jakarta').format('DDMMYYYY')}/visits`)
+           dataa = await fetchJson(`https://api.countapi.xyz/hit/niskata.0${moment.tz('Asia/Jakarta').format('DDMMYYYY')}/visits`)
            jumlahharian = `${dataa.value}`
     }
     
