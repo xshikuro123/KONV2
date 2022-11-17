@@ -44,7 +44,7 @@ global.namaweb = 'TikTok'
 global.myweb = 'https://tiktok.com/@_xkurokochi'
 global.region = 'Jepang'
 global.github = 'gaada'
-global.mygc = 'gaada'
+global.mygc = 'https://chat.whatsapp.com/LoOyCcZuhEqIwjbqfrqJtg'
 global.mytt = 'https://tiktok.com/@_xkurokochi'
 
 //—————「 Set Wm 」—————//
