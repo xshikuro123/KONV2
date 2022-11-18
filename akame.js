@@ -2955,7 +2955,7 @@ break
             case 'attp': case 'ttp': {
             m.reply(mess.wait)
            if (!text) throw `Contoh : ${prefix + command} text`
-           await akame.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'akame', 'kurume', fdoc, {asSticker: true})
+           await akame.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'Kon ~MD', 'Niskata', fdoc, {asSticker: true})
          }
          break
             case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
