@@ -49,8 +49,8 @@ global.mytt = 'https://tiktok.com/@_xkurokochi'
 
 //—————「 Set Wm 」—————//
 //terserah mau ubah atau nggak
-global.packname = 'Kon ~Bot'
-global.author = 'Niskata'
+global.packname = '6285801284666'
+global.author = 'Kon ~Bot'
 
 //—————「 Set Nama Session 」—————//
 //gausah di apa² ini!
