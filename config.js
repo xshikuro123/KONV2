@@ -41,11 +41,11 @@ global.saweria = ['https://saweria.co/konMD']
 //ubah aja kalau ada yang gapunya gsh di hps anggap aja credits :)
 global.email = 'laurentiusdinar00@gmail.com'
 global.namaweb = 'TikTok'
-global.myweb = 'https://tiktok.com/@_xkurokochi'
+global.myweb = 'https://tiktok.com/@xkurokochi_'
 global.region = 'Jepang'
 global.github = 'gaada'
 global.mygc = 'https://chat.whatsapp.com/LoOyCcZuhEqIwjbqfrqJtg'
-global.mytt = 'https://tiktok.com/@_xkurokochi'
+global.mytt = 'https://tiktok.com/@xkurokochi_'
 
 //—————「 Set Wm 」—————//
 //terserah mau ubah atau nggak
@@ -95,7 +95,7 @@ global.thumb = fs.readFileSync('./media/image/akame.jpg')
 global.kurome = { url: 'https://telegra.ph/file/de381b0caeb315a99c68a.mp4' }
 global.botname = 'Niskata Creator'
 global.akulaku = 'Bot By Niskata'
-global.ttname = 'TikTok _xkurokochi'
+global.ttname = 'TikTok xkurokochi_'
 
 //—————「 Set Random Image Menu 」—————//
 //gausah di apa² in!
