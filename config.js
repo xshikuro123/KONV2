@@ -31,7 +31,7 @@ global.namaowner = 'Niskata'
 //terserah mau ubah atau nggak
 global.owner = ['6282327759039']
 global.ownernomer = "6282327759039"
-global.premium = ['6282327759039']
+global.premium = ['']
 
 //—————「 Setting Donasi 」—————//
 //ubah aja kalau ada yg gapunya kasih tanda -
