@@ -3096,7 +3096,7 @@ case 'randomcolor': case 'color': case 'warnarandom': case 'warna': {
                         username: id
                     }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
-                                        akame.sendMedia(m.chat, anu.result.profile, '', `⭔ Full Name : ${anu.result.fullname}\n⭔ User Name : ${anu.result.username}\n⭔ Followers : ${anu.result.followers}\n⭔ Following : ${anu.result.following}\n⭔ Post : ${anu.result.post}`, fgclink)
+                                        akame.sendMedia(m.chat, anu.result.profile, '', `⭔ Full Name : ${anu.result.fullname}\n⭔ User Name : ${anu.result.username}\n⭔ Followers : ${anu.result.followers}\n⭔ Following : ${anu.result.following}\n⭔ Post : ${anu.result.post}\n⭔ Bio : ${anu.result.bio}`, fgclink)
                     db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'npm') {
                     if (!id) throw `No Query username, Contoh : ${prefix + command} npm scrape-primbon`
