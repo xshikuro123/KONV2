@@ -3276,33 +3276,27 @@ case 'randomcolor': case 'color': case 'warnarandom': case 'warna': {
             break
             case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} story wa anime`
-                let yts = require("yt-search")
-                let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-                let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '♫ Audio'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '► Video'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: anu.thumbnail },
-                    caption: `
-📄 Title : ${anu.title}
+            let anu = await fetchJson(api('zenz', '/downloader/y2mate/', { query: text }, 'apikey'))
+            let buttons = [
+                {buttonId: `ytmp3 ${anu.result.getAudio}`, buttonText: {displayText: '♫ Audio'}, type: 1},
+                {buttonId: `ytmp4 ${anu.result.getVideo}`, buttonText: {displayText: '► Video'}, type: 1}
+            ]
+            let buttonMessage = {
+                image: { url: anu.thumb },
+                caption: `
+📄 Title : ${anu.result.title}
 🔎 Ext : Search
-📀 ID : ${anu.videoId}
-⏳ Duration : ${anu.timestamp}
-👁️ Viewers : ${anu.views}
-📤 Upload At : ${anu.ago}
-👨‍🎤 Author : ${anu.author.name}
-💻 Channel : ${anu.author.url}
-💬 Description : ${anu.description}
-🔗 Url : ${anu.url}`,
-                    footer: ntiktok,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                akame.sendMessage(m.chat, buttonMessage, { quoted: m })
+👁️ Viewers : ${anu.result.views}
+📤 Upload At : ${anu.result.uploadDate}
+💻 Channel : ${anu.result.channel}
+💬 Description : ${anu.result.desc}`,
+                footer: ntiktok,
+                buttons: buttons,
+                headerType: 4
             }
-            break
+            akame.sendMessage(m.chat, buttonMessage, { quoted: m })
+        }
+        break
 	    case 'ytmp3': case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
